@@ -15,72 +15,111 @@ $user = $obj->viewData();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRUD PROJECT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         * {
-            font-family: cursive;
-            font-weight: 500;
-            font-size: large;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
         }
 
-        hr {
-            width: 50%;
-            border: 1px solid lightgray;
-            margin-bottom: 20px;
+        body {
+            background-color: #f9f9f9;
+            color: #333;
         }
 
-        label {
-            font-weight: bolder;
-            font-size: x-large;
-            justify-content: center;
-            align-items: center;
-            display: flex;
-            padding-top: 20px;
-        }
-
-        .container {
-            border: 1px solid lightgray;
-            width: 700px;
-            padding: 20px;
+        /* Heading */
+        label[for="heading"] {
+            font-size: 2rem;
+            font-weight: 700;
             text-align: center;
             margin: auto;
-            border-radius: 10px;
+            color: #222;
         }
 
+        /* Horizontal line */
+        hr {
+            width: 60%;
+            margin: 20px auto;
+            border: 1px solid #ddd;
+        }
+
+        /* Container */
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 30px auto;
+            background-color: #fff;
+            padding: 30px;
+            border: 1px solid #eee;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Table styling */
         table {
+            width: 100%;
             border-collapse: collapse;
-            border: 1px solid blue;
-            display: flex;
-            padding: 20px;
-            align-items: center;
-            justify-content: center;
-            border-radius: 4px;
+            margin-bottom: 30px;
+        }
+
+        table th,
+        table td {
+            padding: 12px 16px;
+            border: 1px solid #ddd;
             text-align: center;
+            font-size: 0.95rem;
         }
 
-        a {
+        table th {
+            background-color: #007bff;
+            color: white;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f4f8ff;
+        }
+
+        table tr:hover {
+            background-color: #eef6ff;
+        }
+
+        /* Action links */
+        table a {
+            color: #007bff;
             text-decoration: none;
-            color: blue;
+            font-weight: 500;
+            transition: color 0.3s;
         }
 
+        table a:hover {
+            color: #0056b3;
+        }
+
+        /* Go Back Button */
         .goBack {
-            padding: 10px 20px;
-            border-radius: 5px;
-            background-color: white;
-            color: black;
-            cursor: pointer;
+            display: inline-block;
+            margin: 0 auto;
+            padding: 10px 25px;
+            background-color: #007bff;
+            color: white;
             text-decoration: none;
+            font-weight: 500;
+            border-radius: 6px;
+            transition: background-color 0.3s;
         }
 
         .goBack:hover {
-            border: 1px solid black;
-            border-radius: 6px;
+            background-color: #0056b3;
         }
-
     </style>
 </head>
 
 <body>
-    <label for="heading">Crud Using PDO</label>
+    <center><label for="heading">Crud Using PDO</label></center>
     <hr>
     <div class="container">
         <form method="post">
@@ -108,8 +147,7 @@ $user = $obj->viewData();
                 }
                 ?>
             </table>
-            <br>
-            <a href="../index.php" class="goBack">Go Back</a>
+            <center><a href="../index.php" class="goBack">Go Back</a></center>
         </form>
     </div>
 </body>

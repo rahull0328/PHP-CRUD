@@ -31,8 +31,6 @@ $user = $obj->viewSingleData($id);
             <input class="btnSubmit" type="submit" value="Update" name="btnSubmit">
         </form>
     </div>
-    <br>
-    <br>
     <a href="./viewData.php" class="goBack">View Data</a>
 </body>
 
