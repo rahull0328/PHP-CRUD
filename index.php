@@ -12,6 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRUD PROJECT</title>
     <link rel="stylesheet" href="./assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -29,8 +30,6 @@
             <input class="btnSubmit" type="submit" value="Add" name="btnSubmit">
         </form>
     </div>
-        <br>
-        <br>
         <a href="./pages/viewData.php" class="goBack">View Data</a>
 </body>
 </html>
