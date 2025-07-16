@@ -76,24 +76,6 @@ form input:focus {
     transition: background-color 0.3s;
 }
 
-.btnSubmit:hover {
-    background-color: #0056b3;
-}
-
-/* Go Back link */
-.goBack {
-    display: block;
-    width: fit-content;
-    margin: 40px auto 0;
-    padding: 10px 25px;
-    border: 1px solid #007bff;
-    color: #007bff;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: all 0.3s;
-}
-
 .goBack:hover {
     background-color: #007bff;
     color: white;

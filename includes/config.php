@@ -2,7 +2,7 @@
 
     class db{
         public $con;
-
+//calling constructor automatically 
         function __construct(){
             $dsn = 'mysql:host=localhost;dbname=test';
             $uname = 'root';
