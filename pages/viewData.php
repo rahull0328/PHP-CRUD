@@ -4,6 +4,9 @@ require "../includes/config.php";
 $obj = new db();
 $user = $obj->viewData();
 
+//print data coming from database
+//print_r($user)
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

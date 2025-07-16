@@ -1,6 +1,7 @@
 <?php 
 
     require "./includes/config.php";
+    //creating object of db class from config file
     $obj = new db();
 
 ?>
