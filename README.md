@@ -26,6 +26,7 @@ A simple and functional **CRUD (Create, Read, Update, Delete)** application buil
 
 ## 📁 Project Structure
 
+```plaintext
 PHP-CRUD/
 │
 ├── assets/
@@ -42,6 +43,7 @@ PHP-CRUD/
 ├── index.php # root file
 |
 └── README.md # Project documentation
+```
 
 ---
 
